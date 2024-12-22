@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.topNavbar-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #191D23;
+    align-items: center;
+}
+.topNavbar-container>.topNavbar-language{
+    display: flex;
+    gap: 8px;
+    padding: 10px 0 10px 90px;
+}
+.topNavbar-container>.topNavbar-language>p{
+    color: #FFF;
+font-family: "Noto Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.topNavbar-container>.topNavbar-language>svg{
+    width: 16px;
+    height: 16px;
+}
+.topNavbar-container>.topNavbar-contact{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 85px;
+}
+.topNavbar-container>.topNavbar-contact>span{
+    display: flex;
+    gap: 2px;
+}
+.topNavbar-container>.topNavbar-contact>span>p{
+    color: #FFF;
+text-align: right;
+font-family: "Noto Sans";
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.topNavbar-container>.topNavbar-contact>span>img{
+    width: 14px;
+height: 14px;
+}
+.topNavbar-container>.topNavbar-contact>.line{
+    width: 1px;
+height: 18px;
+opacity: 0.1;
+background: #FFF;
+}
+.topNavbar-container>.topNavbar-contact>span:nth-child(3){
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.topNavbar-container>.topNavbar-contact>span:nth-child(3)>p{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.topNavbar-container>.topNavbar-contact>span:nth-child(3)>.support-button{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 10px 17px;
+    background-color: #1E4679;
+    cursor: pointer;
+}
+.topNavbar-container>.topNavbar-contact>span:nth-child(3)>.support-button>p{
+    color: #FFF;
+font-family: "Noto Sans";
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.topNavbar-container>.topNavbar-contact>span:nth-child(3)>.support-button>svg{
+    width: 7px;
+    height: 4px;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 85px 23px 90px;
+    background-color: #1D2632;
+}
+.navbar-container>.logo>img{
+    width: 162px;
+    height: 36px;
+    flex-shrink: 0;
+}
+.navbar-container>.nav-items{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar-container>.nav-items>span{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.navbar-container>.nav-items>span>p{
+    color: #FFF;
+font-family: Lato;
+font-size: 13.187px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.navbar-container>.nav-items>span>svg{
+    width: 7px;
+    height: 4px;
+}
+.navbar-container>.nav-items>svg{
+    width: 32px;
+height: 27px;
+}
+.navbar-container>.nav-items>button:nth-child(6){
+    border-radius: 5px;
+border: 1px solid #FFF;
+padding: 9px 13px;
+outline: none;
+color: #FFF;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+background-color: transparent;
+}
+.navbar-container>.nav-items>button:nth-child(7){
+    background: linear-gradient(100deg, #EAF7FF 4.77%, rgba(254, 254, 254, 0.76) 65.45%, rgba(138, 171, 255, 0.53) 132.52%);
+    border-radius: 5px;
+padding: 9px 18px;
+color: #000;
+font-family: "Noto Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: flex;
+align-items: center;
+gap: 5px;
+}
+.navbar-container>.nav-items>button:nth-child(7)>svg{
+    width: 10.5px;
+height: 11.5px;
+}
+.main-container{
+    background: #EFF5FB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-container>.main-container-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 0;
+    overflow: hidden;
+    height: 0;
+    justify-content: center;
+}
+.main-container>.main-container-img.active{
+    height: 880px;
+    width: 100%;
+}
+.main-container>.main-container-img>img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    height: 880px;
+}
+.main-container>.main-container-img>h3{
+    color: #FFF;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 50px;
+font-style: normal;
+font-weight: 300;
+line-height: 110%; /* 55px */
+letter-spacing: -1px;
+position: relative;
+transition: 0.5s;
+z-index: 1;
+}
+.main-container>.main-container-img>h3>span{
+    color: #FFF;
+font-family: "Noto Sans";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%;
+transition: 0.5s;
+letter-spacing: -1px;
+}
+.main-container>.main-container-img>.contents{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.main-container .contents > span{
+    width: 100%;
+}
+.main-container-img:has(.contents > span:hover) > h3 {
+    transition: 0.5s;
+    color: transparent;
+}
+
+.main-container-img:has(.contents > span:hover) > h3>span {
+    transition: 0.5s;
+    color: transparent;
+}
+
+.main-container>.main-container-img>.contents>span{
+    border-right: 1px solid rgb(255 255 255 / 20%);
+flex: 0.2;
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+overflow: hidden;
+transition: 0.5s;
+}
+.main-container>.main-container-img>.contents>span:hover{
+    flex: 0.25;
+    transition: 0.5s;
+}
+.main-container>.main-container-img>.contents>span>img:nth-child(1){
+    position: absolute;
+    top: 80%;
+    width: 48px;
+height: 50px;
+transition: 0.5s;
+}
+.main-container>.main-container-img>.contents>span:hover>img:nth-child(1){
+    width: 0;
+    transition: 0.5s;
+}
+.main-container>.main-container-img>.contents>span>img:nth-child(4),
+.main-container>.main-container-img>.contents>span>img:nth-child(3){
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 0;
+}
+.main-container>.main-container-img>.contents>span:hover>img:nth-child(4),
+.main-container>.main-container-img>.contents>span:hover>img:nth-child(3){
+    width: 100%;
+    transition: 0.5s;
+}
+.main-container>.main-container-img>.contents>span>.blur{
+    display: none;
+}
+.main-container>.main-container-img>.contents>span:hover>.blur{
+    display: block;
+    width: 100%;
+height: 386px;
+background: rgb(37, 150, 190);
+filter: blur(84px);
+position: absolute;
+bottom: -190px;
+z-index: 1;
+}
+.main-container>.main-container-img>.contents>span>p:nth-child(2){
+    position: absolute;
+    top: 86%;
+    color: #FFF;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 110%; /* 14.3px */
+letter-spacing: -0.26px;
+transition: 0.5s;
+width: auto;
+}
+.main-container>.main-container-img>.contents>span>h3{
+    position: absolute;
+    top: 82%;
+    color: #FFF;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 110%; /* 14.3px */
+letter-spacing: -0.26px;
+transition: 0.5s;
+width: 0;
+transition: 0.5s;
+z-index: 2;
+overflow: hidden;
+}
+.main-container>.main-container-img>.contents>span:hover>h3{
+    width: auto;
+    transition: 0.5s;
+}
+.main-container>.main-container-img>.contents>span>p:nth-child(6),
+.main-container>.main-container-img>.contents>span>p:nth-child(5){
+    position: absolute;
+    top: 85%;
+    color: #FFF;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 110%; /* 14.3px */
+letter-spacing: -0.26px;
+transition: 0.5s;
+display: none;
+text-align: center;
+margin: 0 15px;
+z-index: 2;
+}
+
+.main-container>.main-container-img>.contents>span>p:nth-child(6)::before,
+.main-container>.main-container-img>.contents>span>p:nth-child(5)::before{
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 100%;
+    border-radius: 4px;
+    background: #ED3237;
+    right: -25px;
+}
+.main-container>.main-container-img>.contents>span:hover>p:nth-child(6),
+.main-container>.main-container-img>.contents>span:hover>p:nth-child(5) {
+    display: block;
+}
+.main-container>.main-container-img>.contents>span>button{
+    position: absolute;
+    top: 93%;
+    padding: 5px 10px;
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #FFF;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 110%; /* 14.3px */
+letter-spacing: -0.26px;
+display: none;
+z-index: 2;
+transition: 0.5s;
+overflow: hidden;
+cursor: pointer;
+}
+.main-container>.main-container-img>.contents>span>button:hover{
+    background-color: #FFF;
+    color: blue;
+}
+.main-container>.main-container-img>.contents>span:hover>button{
+    display: block;
+    transition: 0.5s;
+}
+.main-container>.main-container-img>.contents>span:hover>p:nth-child(2){
+    width: 0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.main-container>.main-container-img>.contents>span>svg:nth-child(3){
+    position: absolute;
+    right: -3px;
+    width: 5px;
+height: 39px;
+transition: 0.5s;
+}
+.main-container>.main-container-img>.contents>span:hover>svg:nth-child(3){
+    width: 0;
+    transition: 0.5s;
+}
+.main-container>.main-container-img>.contents>span:nth-child(1)>svg{
+    top: 90%;
+}
+.main-container>.main-container-img>.contents>span:nth-child(2)>svg{
+    top: 20%;
+}
+.main-container>.main-container-img>.contents>span:nth-child(3)>svg{
+    top: 70%;
+}
+.main-container>.main-container-img>.contents>span:nth-child(4)>svg{
+    top: 50%;
+}
+.main-container>.main-container-box{
+    width: 80%;
+    border-radius: 10px;
+    position: relative;
+    top: -20px;
+    margin-bottom: 100px;
+    z-index: 100;
+    background-color: #FFF;
+    padding: 20px 0 40px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    fill: #FFF;
+filter: drop-shadow(14px 14px 32px rgba(31, 70, 121, 0.10));
+}
+.main-container>.main-container-box>h2{
+    color: #333;
+font-family: "Noto Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.48px;
+}
+.main-container>.main-container-box>h2>span{
+    color: #333;
+font-family: "Noto Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.48px;
+}
+.main-container>.main-container-box>p{
+    color: #58595B;
+font-family: Helvetica;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+margin-bottom: 14px;
+}
+.main-container>.main-container-box>.inputs-button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+.main-container>.main-container-box>.inputs-button>input{
+    border: 1px solid #DFDFDF;
+background: #FFF;
+box-shadow: 0px 0px 4px 0px rgba(103, 103, 103, 0.25) inset;
+padding: 10px 18px;
+}
+.main-container>.main-container-box>.inputs-button>input::placeholder{
+    color: #373335;
+font-family: "Noto Sans";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: 150%; /* 19.5px */
+}
+.main-container>.main-container-box>.inputs-button>button{
+    border-radius: 4px;
+background: #ED3237;
+display: flex;
+padding: 10px 20px;
+border: none;
+outline: none;
+color: #FFF;
+font-family: "Open Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+cursor: pointer;
+}
+.main-container>.main-container-box>.inputs-button>button>svg{
+    width: 25px;
+    height: 25px;
+}
+.main-container>.main-container-box>.checks-button{
+    display: flex;
+    justify-content: space-between;
+}
+.main-container>.main-container-box>.checks-button>.checkbox{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.main-container>.main-container-box>.checks-button>.checkbox>label{
+    color: var(--Secondary-Secondary-Grey-Dark, #58595B);
+font-family: "Open Sans";
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.main-container>.main-container-box>.checks-button>.button{
+    display: flex;
+    gap: 15px;
+    background-color: #F3FAFF;
+backdrop-filter: blur(12.956096649169922px);
+padding: 10px 25px;
+}
+.main-container>.main-container-box>.checks-button>.button::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 36px solid #F3FAFF;
+    left: -50px;
+    top: 0;
+    
+}
+.main-container>.main-container-box>.checks-button>.button>svg{
+    width: 14px;
+    height: 14px;
+}
+.main-container>.main-container-box>.checks-button>.button>p{
+    color: #ED3237;
+font-family: "Noto Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+cursor: pointer;
+letter-spacing: -0.227px;
+}
+.main-container>.main-container-box>.checks-button>.button>p:nth-child(3){
+    color: #888;
+font-family: Helvetica;
+font-size: 9.717px;
+font-style: normal;
+font-weight: 400;
+cursor: auto;
+line-height: 150%; /* 14.576px */
+}
+.main-container>.main-container-product{
+    position: relative;
+    width: 0;
+    height: 0;
+    overflow: hidden; 
+    background: linear-gradient(180deg, #247AC1 0%, rgba(36, 122, 193, 0.81) 109.01%, rgba(36, 122, 193, 0.00) 123.17%);
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.main-container>.main-container-product.active{
+    width: 100%;
+    height: 705px;
+    overflow: hidden;
+}
+.main-container>.main-container-product>.img-area>img{
+    position: relative;
+    top: -20px;
+    width: 412px;
+height: 766px;
+}
+.main-container>.main-container-product>.content-area{
+    display: flex;
+    gap: 50px;
+}
+.main-container>.main-container-product>.content-area>.headings{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+}
+.main-container>.main-container-product>.content-area>.headings>h1{
+    color: #FFF;
+font-family: "Noto Sans";
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1px;
+}
+.main-container>.main-container-product>.content-area>.headings>h1>span{
+    font-weight: 700;
+}
+.main-container>.main-container-product>.content-area>.headings>p{
+    color: #FFF;
+font-family: "Noto Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.main-container>.main-container-product>.content-area>.headings>button{
+    border-radius: 3.297px;
+border: 0.824px solid #FFF;
+outline: none;
+padding: 7px 13px;
+color: #FFF;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 50px;
+background-color: transparent;
+width: fit-content;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section{
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card{
+    width: 210px;
+height: 347.464px;
+border-radius: 21.205px;
+background: #FFF;
+box-shadow: 1.414px 5.655px 7.068px 0px rgba(47, 84, 131, 0.07);
+display: flex;
+flex-direction: column;
+gap: 24px;
+align-items: center;
+padding: 0 10px 0 22px;
+transition: 0.5s;
+position: relative;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card:hover{
+    border-radius: 21.205px;
+    background: #ED3237;
+    box-shadow: 1.414px 5.655px 7.068px 0px rgba(47, 84, 131, 0.07);
+    gap: 0;
+    transition: 0.5s;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>span{
+    
+position: relative;
+top: -30px;
+
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>span>img{
+    width: 58px;
+height: 60.417px;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>span>p{
+    color: #545454;
+text-align: center;
+font-family: "Noto Sans";
+font-size: 9.189px;
+font-style: normal;
+font-weight: 600;
+line-height: 110%; /* 10.108px */
+letter-spacing: -0.184px;
+text-transform: uppercase;
+}
+
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card:hover>span>p{
+    display: none;
+    transition: 0.5s;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>.card-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>.card-contents>p{
+    color: #1E4679;
+font-family: "Noto Sans";
+font-size: 16.964px;
+font-style: normal;
+font-weight: 300;
+line-height: 120%; /* 20.357px */
+letter-spacing: -0.339px;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card:hover>.card-contents>p{
+    color: #FFF;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>.card-contents>h2{
+    color: #1E4679;
+font-family: "Noto Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 26.4px */
+letter-spacing: -0.44px;
+margin-bottom: 8px;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card:hover>.card-contents>h2{
+    color: #FFF;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>.card-contents>svg:nth-child(4){
+    display: none;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card:hover>.card-contents>svg:nth-child(3){
+    display: none;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card:hover>.card-contents>svg:nth-child(4){
+    display: block;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>.card-contents>h6{
+    color: #333;
+font-family: "Open Sans";
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 12px;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card:hover>.card-contents>h6{
+    color: #FFF;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>.card-contents>ul{
+    margin-left: 10px;
+    margin-top: 12px;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>.card-contents>ul>li{
+
+    color: #333;
+font-family: "Open Sans";
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 180%;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card:hover>.card-contents>ul>li{
+    color: #FFF;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>.card-contents>ul>li>span{
+    color: #333;
+font-family: "Open Sans";
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: 180%; /* 19.8px */
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card:hover>.card-contents>ul>li>span{
+    color: #FFF;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>.card-contents>p:nth-child(7){
+    display: none;
+    color: #FFF;
+font-family: "Noto Sans";
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 10px;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card:hover>.card-contents>p:nth-child(7){
+    display: block;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>.card-contents>span:nth-child(8){
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #1E4679;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 0;
+    left: 0;
+    border-bottom-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+    cursor: pointer;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card>.card-contents>span:nth-child(8)>p{
+    color: #FFF;
+font-family: "Noto Sans";
+font-size: 14.298px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.main-container>.main-container-product>.content-area>.headings>.cards-section>.card:hover>.card-contents>span:nth-child(8){
+    display: flex;
+}
+.main-container>.main-container-product>.content-area>.cancel-icon{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+}
+.main-container>.main-container-product>.content-area>.cancel-icon>svg{
+    position: absolute;
+}
+.main-container>.main-container-product>.content-area>.cancel-icon>svg:nth-child(1){
+    top: -50px;
+    right: 10%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.main-container>.main-container-product>.content-area>.cancel-icon>svg:nth-child(1):hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+.main-container>.main-container-product>.content-area>.cancel-icon>svg:nth-child(2){
+    top: 10px;
+    right: 20%;
+}
+.main-container>.main-container-product>.content-area>.cancel-icon>svg:nth-child(3){
+    bottom: -20%;
+    left: 60%;
+}
+.main-container>.main-container-product>.content-area>.cancel-icon>svg:nth-child(4){
+    bottom: 0;
+    right: 0;
+}
+.main-container>.main-container-product>.content-area>.cancel-icon>svg:nth-child(5){
+    top: 50%;
+    right: 20%;
+}
