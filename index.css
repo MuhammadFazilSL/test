@@ -515,27 +515,13 @@ cursor: pointer;
     display: flex;
     justify-content: space-between;
     gap: 100px;
-}
-.main-container>.main-container-box>.checks-button>.checkbox{
+}.main-container > .main-container-box > .checks-button > .checkbox {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.main-container>.main-container-box>.checks-button>.checkbox>input[type="checkbox"]{
-    width: 13px;
-height: 13px;
-    accent-color: #FFF; /* Change tick color */
-    border-radius: 2px;
-    border: 2px solid  #1E4679 ; /* Optional: Add a border */
-    border-radius: 2px; /* Optional: Make it rounded */
-    cursor: pointer;
-}
-.main-container>.main-container-box>.checks-button>.checkbox>input[type="checkbox"]:checked {
-    background-color: #007BFF; /* Background when checked */
-    border-color: #0056b3; /* Border color when checked */
-    border: 2px solid #1E4679;
-}
-.main-container>.main-container-box>.checks-button>.checkbox>label{
+
+.main-container > .main-container-box > .checks-button > .checkbox > label {
     color: #58595B;
     font-family: "Open Sans";
     font-size: 11px;
@@ -544,6 +530,45 @@ height: 13px;
     line-height: normal;
     opacity: 0.7;
 }
+
+/* Default checkbox style */
+.main-container > .main-container-box > .checks-button > .checkbox > input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    background-color: #FFF; /* Default background color */
+    border: 2px solid #ccc; /* Default border color */
+    border-radius: 4px; /* Optional: Rounded corners */
+    appearance: none; /* Removes default styling for custom styling */
+    cursor: pointer;
+    position: relative; /* For custom tick alignment */
+}
+
+/* Style when checkbox is hovered */
+.main-container > .main-container-box > .checks-button > .checkbox > input[type="checkbox"]:hover {
+    border-color: #007BFF; /* Border color on hover */
+}
+
+/* Style when checkbox is checked */
+.main-container > .main-container-box > .checks-button > .checkbox > input[type="checkbox"]:checked {
+    background-color: #FFF; /* Background when checked */
+    border-color: #0056b3; /* Border color remains visible */
+}
+
+/* Add a custom checkmark */
+.main-container > .main-container-box > .checks-button > .checkbox > input[type="checkbox"]:checked::before {
+    content: "✔"; /* Unicode checkmark */
+    color: #000; /* White tick color */
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .main-container>.main-container-box>.checks-button>.button{
     display: flex;
     align-items: center;
